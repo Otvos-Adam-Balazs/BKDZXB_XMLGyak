@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konferencia>
+	<cim id="txn_nxm_2jb" nev="Tanitas"/>
+	
+	<hallgatok id="asd_nxm_3jb" kar="GEIK">
+		<hallgato id="abx_nxm_2jb" szak="INFORMATIKA">
+			<nev id="abd_nxm_2jb" nev="Otvos Adam"/>
+			<lakcim id="abe_nxm_2jb" varos="Miskolc"/>
+		</hallgato>
+	</hallgatok>
+	
+	<helyszin id="hgj_mnb_5jb" EloadoT="A1/205"/>
+	
+	<eloado>
+		<nev id="kjm_nhj_6lk" nev="Nevet Elek"/>
+		<adoszam id="kjn_nhj_61k" szam="45235485654"/>
+		<lakcim id="kjb_nhj_61k" cim="Miskolc"/>
+	</eloado>
+	
+	<datum id="uio_vgh_54k" idopont="2020.09.23"/>
+</konferencia>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mozi>
+	<film id="txn_nxm_2jb" mufaj="horror">
+		<rendezo id="nzk_4xm_2jb" nev="alex"/>
+		<szinez id="u5q_4xm_2jb" nev="Madison_Ivi"/>
+		<iro id="trv_4xm_2jb"/>
+	</film>
+	
+	<filmek>
+		<producer id="kmb_5xm_6jb" nev="Kis Karoly"/>
+		<dramaturg id="knb_5xm_6jb" nev="Fá Zoltán"/>
+		<operator id="kvb_5xm_6jb" nev="Vicc Elek"/>
+	</filmek>
+</mozi>
