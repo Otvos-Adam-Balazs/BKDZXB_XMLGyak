@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE konyvek SYSTEM "BKDZXB_konyv.dtd">
+
+<konyvek>
+
+	 <konyv id="a11">
+		<cim >"Alkalmazás fejlesztés Android Studio rendszerben"</cim>
+		<kiadas_eve> 2018 </kiadas_eve>
+		<kiado> BBS-INfO</kiado>
+		<szerzo>Fehér Krisztián</szerzo> 
+		<absztrakt></absztrakt>
+	 </konyv>
+	 
+	 <konyv id="b11">
+		<cim >"Hogyan legyél jól fiezetett C# programozó?"</cim>
+		<kiadas_eve> 2019 </kiadas_eve>
+		<kiado> BBS-INfO</kiado>
+		<szerzo>Koncz Balázs</szerzo> 
+		<absztrakt></absztrakt>
+	 </konyv>
+	 
+	 <konyv id="c11">
+		<cim >Windows 10 mindenkinek</cim>
+		<kiadas_eve> 2019 </kiadas_eve>
+		<kiado> BBS-INfO</kiado>
+		<szerzo>Bártfai Barnabás></szerzo>
+		<szerzo>Bártfai András></szerzo>
+		<absztrakt></absztrakt>
+	 </konyv>
+
+</konyvek>
