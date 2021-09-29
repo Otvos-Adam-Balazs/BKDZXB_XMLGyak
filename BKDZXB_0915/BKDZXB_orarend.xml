@@ -2,7 +2,6 @@
 
 <orarend>
 
-	<hetfo>
 	<ora id="asd_sad_1jb" tipus="elmelet">
 			<targy>Algoritmusok és vizsgálata</targy>
 			
@@ -59,9 +58,7 @@
 			<szak>Progterv</szak>
 		</ora>
 	
-	</hetfo>
-	
-	<kedd><ora id="asd_sad_5jb" tipus="elmelet">
+	<ora id="asd_sad_5jb" tipus="elmelet">
 		<targy>Adatkezelés XML-ben</targy>
 			
 			<idopont>
@@ -88,9 +85,9 @@
 			<oktato>Okt.K</oktato>
 			<szak>Progterv</szak>
 	</ora>
-	</kedd>
+
 	
-	<szerda>
+
 	<ora id="asd_sad_7jb" tipus="gyak">
 		<targy>Mesterséges inteligencia</targy>
 			
@@ -118,6 +115,6 @@
 			<oktato>Dr.Bednarik László</oktato>
 			<szak>Progterv</szak>
 	</ora>
-	</szerda>
+
 	
 </orarend>
