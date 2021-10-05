@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ER-DTD SYSTEM "BKDZXB_ertodtd.dtd">
+
+<ER-DTD>
+	<A Aa="sa">	
+		<Ab>
+			<Abx></Abx>
+			<Aby></Aby>
+		</Ab>
+		
+		<Ac>
+			<Acd></Acd>
+			<Ace></Ace>
+		</Ac>
+	</A>
+	
+	<B Ba="sb">
+		<Bb>
+			<Bbx></Bbx>
+			<Bby></Bby>
+		</Bb>	
+	</B>
+	
+	<C Ca="sc">
+		<Cb/>
+	</C>
+	
+	<A_B>
+		<A_Bc></A_Bc>
+	</A_B>
+		
+
+
+
+
+</ER-DTD>
