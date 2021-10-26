@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<macskak>
+	<macska id="a1">
+		<nev>alma</nev>
+		<kor>1</kor>
+		<fajta>Perzsa macska</fajta>
+	</macska>
+	
+	<macska id="a2">
+		<nev>banan</nev>
+		<kor>3</kor>
+		<fajta>Bengáli macska</fajta>
+	</macska>
+	
+	<macska id="a3">
+		<nev>citrom</nev>
+		<kor>2</kor>
+		<fajta>Keverék</fajta>
+	</macska>
+</macskak>
+

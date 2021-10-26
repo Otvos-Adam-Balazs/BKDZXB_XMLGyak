@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/macskakBKDZXB" xmlns:tns="http://www.example.org/macskakBKDZXB" elementFormDefault="qualified">
+	<element name="macskak">
+		<complexType>
+			<sequence>
+				<element name="macska" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="nev" type="string"/>
+							<element name="kor" type="unsignedShort"/>
+							<element name="faja" type="string"/>
+						</sequence>
+						<attribute name="id" type="string" use="required"/>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+
+</schema>
