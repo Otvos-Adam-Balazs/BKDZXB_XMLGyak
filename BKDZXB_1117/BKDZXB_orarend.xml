@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href= "orarendBKDZXB.xsl"?>
+
+<orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="BKDZXB_orarend1.xsd">
+
+	<ora id="asd_sad_1jb" tipus="elmelet">
+			<targy>Algoritmusok és vizsgálata</targy>
+			
+			<idopont>
+				<nap>hetfo</nap>
+				<tol>8</tol>
+				<ig>12</ig>	
+			</idopont>
+			
+			<helyszin>XII A3 III.em.313</helyszin>
+			<oktato>Dr. Házy Attlia</oktato>
+			<szak>Progterv</szak>
+		</ora>
+		
+		<ora id="asd_sad_2jb" tipus="elmelet">
+			<targy>Web technológiák</targy>
+			
+			<idopont>
+				<nap>hetfo</nap>
+				<tol>12</tol>
+				<ig>14</ig>	
+			</idopont>
+			
+			<helyszin>XXX A1 III.em305</helyszin>
+			<oktato>Agárdi Anita</oktato>
+			<szak>Progterv</szak>
+		</ora>
+		
+		<ora id="asd_sad_3jb" tipus="elmelet">
+			<targy>Mesterséseg inteligencia</targy>
+			
+			<idopont>
+				<nap>hetfo</nap>
+				<tol>14</tol>
+				<ig>17</ig>	
+			</idopont>
+			
+			<helyszin>XXXII A1 magasfsz</helyszin>
+			<oktato>Dr.Dudás László</oktato>
+			<szak>Progterv</szak>
+		</ora>
+		
+		<ora id="asd_sad_4jb" tipus="gyakorlat">
+			<targy>Web technologiak</targy>
+			
+			<idopont>
+				<nap>hetfo</nap>
+				<tol>17</tol>
+				<ig>19</ig>	
+			</idopont>
+			
+			<helyszin>In/101 In I.e. 101</helyszin>
+			<oktato>Agárdi Anita</oktato>
+			<szak>Progterv</szak>
+		</ora>
+	
+	<ora id="asd_sad_5jb" tipus="elmelet">
+		<targy>Adatkezelés XML-ben</targy>
+			
+			<idopont>
+				<nap>Kedd</nap>
+				<tol>12</tol>
+				<ig>14</ig>	
+			</idopont>
+			
+			<helyszin>I A2 fsz.</helyszin>
+			<oktato>Dr.Bednarik László</oktato>
+			<szak>Progterv</szak>
+	</ora>
+	
+	<ora id="asd_sad_6jb" tipus="elm/gyak">
+		<targy>Idegennyelv 1</targy>
+			
+			<idopont>
+				<nap>Kedd</nap>
+				<tol>16</tol>
+				<ig>18</ig>	
+			</idopont>
+			
+			<helyszin>A1/11</helyszin>
+			<oktato>Okt.K</oktato>
+			<szak>Progterv</szak>
+	</ora>
+
+	
+
+	<ora id="asd_sad_7jb" tipus="gyak">
+		<targy>Mesterséges inteligencia</targy>
+			
+			<idopont>
+				<nap>Szerda</nap>
+				<tol>9</tol>
+				<ig>10</ig>	
+			</idopont>
+			
+			<helyszin>In/15</helyszin>
+			<oktato>Dr.Dudás László</oktato>
+			<szak>Progterv</szak>
+	</ora>
+	
+	<ora id="asd_sad_8jb" tipus="gyak">
+		<targy>Adatkezelés XML-ben</targy>
+			
+			<idopont>
+				<nap>szerda</nap>
+				<tol>10</tol>
+				<ig>12</ig>	
+			</idopont>
+			
+			<helyszin>In/202.</helyszin>
+			<oktato>Dr.Bednarik László</oktato>
+			<szak>Progterv</szak>
+	</ora>
+
+	
+</orarend>
