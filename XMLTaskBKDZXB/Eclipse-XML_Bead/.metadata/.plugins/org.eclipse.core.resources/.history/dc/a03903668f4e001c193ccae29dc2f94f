@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/XMLSchemaBKDZXB" xmlns:tns="http://www.example.org/XMLSchemaBKDZXB" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<element name="Kosarcsapat">
+		<complexType>
+			<sequence>
+				<element name="Csapat" type="CsapatTipus"/>
+				<element name="Jatekosok" type="JatekosTipus" minOccurs="5" maxOccurs="unbounded"/>
+				<element name="Merkozes" type="MerkozesTipus" maxOccurs="unbounded"/>
+				<element name="Vezetoseg" type="VezetosegTipus" maxOccurs="unbounded"/>
+				<element name="Tabella" type="TabellaTipus" maxOccurs="1"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<complexType name="CsapatTipus">
+		<sequence>
+			<element name="Csvaros" type="string"/>
+			<element name="Cselerhetoseg" type="string"/>
+			<element name="Csnev"/>
+		</sequence>
+			<attribute name="id" type="string" use="required"/>
+	</complexType>
+</schema>

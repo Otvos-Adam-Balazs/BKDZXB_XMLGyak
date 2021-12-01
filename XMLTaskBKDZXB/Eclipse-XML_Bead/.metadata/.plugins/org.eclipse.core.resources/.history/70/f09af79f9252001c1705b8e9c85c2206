@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Kosarcsapat>
+	<Csapat Cskod="k1">
+		<Csvaros>Miskolc</Csvaros>
+		<Cselerhetoseg>Telefon: 06/20-222-2223</Cselerhetoseg>
+		<Csnev>Szikla</Csnev>
+	</Csapat>
+	
+	<Jatekosok Jkod="k2">
+		<Jnev>Kis Pista</Jnev>
+		<Jeletkor> 20</Jeletkor>
+		<Jmezszam>23</Jmezszam>
+	</Jatekosok>
+	
+	<Jatekosok Jkod="k2.1">
+		<Jnev>Nagy Sándor</Jnev>
+		<Jeletkor>22</Jeletkor>
+		<Jmezszam>18</Jmezszam>
+	</Jatekosok>
+	
+	<Jatekosok Jkod="k2.2">
+		<Jnev>Zsák Aurélió</Jnev>
+		<Jeletkor>21</Jeletkor>
+		<Jmezszam>22</Jmezszam>
+	</Jatekosok>
+	
+	<Jatekosok Jkod="k2.3">
+		<Jnev>Kis Áron</Jnev>
+		<Jeletkor>23</Jeletkor>
+		<Jmezszam>56</Jmezszam>
+	</Jatekosok>
+	
+	<Jatekosok Jkod="k2.4">
+		<Jnev>Balog Gábor</Jnev>
+		<Jeletkor>22</Jeletkor>
+		<Jmezszam>17</Jmezszam>
+	</Jatekosok>
+	
+	<Merkozes Mkod="k3">
+		<MIdo>2021.10.23 18:00</MIdo>
+		<Mhelyszin>Szolnok</Mhelyszin>
+	</Merkozes>
+	
+	<Merkozes Mkod="k3.1">
+		<MIdo>2021.10.30 18:00</MIdo>
+		<Mhelyszin>Eger</Mhelyszin>
+	</Merkozes>
+	
+	<Merkozes Mkod="k3.2">
+		<MIdo>2021.11.5 18:00</MIdo>
+		<Mhelyszin>Miskolc</Mhelyszin>
+	</Merkozes>
+	
+	<Vezetoseg Vkod="k4">
+		<Vtagok>Kovács István</Vtagok>
+		<Vbeosztas>Akadémiai igazgató</Vbeosztas>
+	</Vezetoseg>
+	
+	<Vezetoseg Vkod="k4.1">
+		<Vtagok>Török Gábor</Vtagok>
+		<Vbeosztas>Szakmai igazgató</Vbeosztas>
+	</Vezetoseg>
+	
+	<Vezetoseg Vkod="k4.2">
+		<Vtagok>Emődi Gábor</Vtagok>
+		<Vbeosztas>Vezető edző</Vbeosztas>
+	</Vezetoseg>
+	
+	<Tabella Tkod="k5">
+		<Tmeccszam>1</Tmeccszam>
+		<Thelyezes>1</Thelyezes>
+		<Tstatisztika>
+			<Gyozelem>1</Gyozelem>
+			<Vereseg>0</Vereseg>
+			<Atlag>1</Atlag>
+		</Tstatisztika>
+	</Tabella>	
+</Kosarcsapat>

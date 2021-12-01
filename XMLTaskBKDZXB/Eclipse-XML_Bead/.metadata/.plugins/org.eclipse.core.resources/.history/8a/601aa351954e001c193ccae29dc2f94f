@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<element name="Kosarcsapat">
+		<complexType>
+			<sequence>
+				<element name="Csapat" type="Csapat_Tipus" minOccurs="0" maxOccurs="1"/>
+				<element name="Jatekosok" type="JatekosokTipus" minOccurs="5" maxOccurs="unbounded"/>
+				<element name="Merkozes" type="MerkozesTipus" maxOccurs="unbounded"/>
+				<element name="Vezetoseg" type="VezetosegTipus" maxOccurs="unbounded"/>
+				<element name="Tabella" type="TabellaTipus" maxOccurs="1"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<complexType name="Csapat_Tipus">
+		<sequence>
+			<element name="Csvaros" type="string"/>
+			<element name="Cselerhetoseg" type="string"/>
+			<element name="Csnev" type="string"/>
+		</sequence>
+			<attribute name="Cskod" type="string" use="required"/>
+	</complexType>
+	
+	<complexType name="JatekosokTipus">
+		<sequence>
+			<element name="Jnev" type="string"/>
+			<element name="Jeletkor" type="integer"/>
+			<element name="Jmezszam" type="integer"/>
+		</sequence>
+			<attribute name="Jkod" type="string" use="required"/>
+	</complexType>
+	
+	<complexType name="MerkozesTipus">
+		<sequence>
+			<element name="MIdo" type="string"/>
+			<element name="Mhelyszin" type="string"/>
+		</sequence>
+			<attribute name="Mkod" type="string" use="required"/>
+	</complexType>
+	
+	<complexType name="VezetosegTipus">
+		<sequence>
+			<element name="Vtagok" type="string"/>
+			<element name="Vbeosztas" type="string"/>
+		</sequence>
+			<attribute name="Vkod" type="string" use="required"/>
+	</complexType>
+	
+	<complexType name="TabellaTipus">
+		<sequence>
+			<element name="Vtagok" type="string"/>
+			<element name="Vbeosztas" type="string"/>
+		</sequence>
+			<attribute name="Vkod" type="string" use="required"/>
+	</complexType>
+</schema>

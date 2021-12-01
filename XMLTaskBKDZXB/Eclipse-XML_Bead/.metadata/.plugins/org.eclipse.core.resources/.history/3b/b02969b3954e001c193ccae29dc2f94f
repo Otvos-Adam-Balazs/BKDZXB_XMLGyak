@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Kosarcsapat">
+		
+        <xs:complexType>
+			<xs:sequence>
+				<xs:element name="Csapat" type="Csapat_Tipus" minOccurs="0" maxOccurs="1" />
+				<xs:element name="Jatekosok" type="JatekosokTipus" minOccurs="5" maxOccurs="unbounded" />
+				<xs:element name="Merkozes" type="MerkozesTipus" maxOccurs="unbounded" />
+				<xs:element name="Vezetoseg" type="VezetosegTipus" maxOccurs="unbounded" />
+				<xs:element name="Tabella" type="TabellaTipus" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+    </xs:element>
+	
+	<xs:complexType name="Csapat_Tipus">
+		<xs:sequence>
+			<xs:element name="Csvaros" type="string" />
+			<xs:element name="Cselerhetoseg" type="string" />
+			<xs:element name="Csnev" type="string" />
+		</xs:sequence>
+			<xs:attribute name="Cskod" type="string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="JatekosokTipus">
+		<xs:sequence>
+			<xs:element name="Jnev" type="string" />
+			<xs:element name="Jeletkor" type="integer" />
+			<xs:element name="Jmezszam" type="integer" />
+		</xs:sequence>
+			<xs:attribute name="Jkod" type="string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="MerkozesTipus">
+		<xs:sequence>
+			<xs:element name="MIdo" type="string" />
+			<xs:element name="Mhelyszin" type="string" />
+		</xs:sequence>
+			<xs:attribute name="Mkod" type="string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="VezetosegTipus">
+		<xs:sequence>
+			<xs:element name="Vtagok" type="string" />
+			<xs:element name="Vbeosztas" type="string" />
+		</xs:sequence>
+			<xs:attribute name="Vkod" type="string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="TabellaTipus">
+		<xs:sequence>
+			<xs:element name="Vtagok" type="string" />
+			<xs:element name="Vbeosztas" type="string" />
+		</xs:sequence>
+			<xs:attribute name="Vkod" type="string" use="required" />
+	</xs:complexType>
+	
+<xs:schema></xs:schema>

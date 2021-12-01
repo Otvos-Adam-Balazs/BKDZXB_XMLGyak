@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\Eclipse-XML_Bead\.metadata\.plugins\org.eclipse.jdt.core
+3863201353.index
+3780786560.index

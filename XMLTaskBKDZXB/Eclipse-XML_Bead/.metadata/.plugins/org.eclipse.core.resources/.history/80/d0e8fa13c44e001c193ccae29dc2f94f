@@ -1,0 +1,10 @@
+package hu.domparse.bkdzxb;
+
+public class DomQueryBKDZXB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

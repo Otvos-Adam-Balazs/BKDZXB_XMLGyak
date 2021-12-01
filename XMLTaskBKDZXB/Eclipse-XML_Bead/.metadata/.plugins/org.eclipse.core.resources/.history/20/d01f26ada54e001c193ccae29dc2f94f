@@ -1,0 +1,88 @@
+package hu.domparse.bkdzxb;
+
+import org.w3c.dom.*;
+import org.xml.sax.SAXException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+import java.io.*;
+
+
+public class DOMModifyBKDZXB {
+
+	public static void main(String[] args) throws FileNotFoundException, IOException, ParserConfigurationException, SAXException, TransformerException {
+		// TODO Auto-generated method stub
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+
+        try (InputStream is = new FileInputStream("XMLBKDZXB.xml")) {
+
+            DocumentBuilder db = dbf.newDocumentBuilder();
+
+            Document doc = db.parse(is);
+
+            NodeList listOfCsapat = doc.getElementsByTagName("Csapat");
+            
+            for (int i = 0; i < listOfCsapat.getLength(); i++) {
+                // get first staff
+                Node Csapat = listOfCsapat.item(i);
+                if (Csapat.getNodeType() == Node.ELEMENT_NODE) {
+                    String id = Csapat.getAttributes().getNamedItem("Cskod").getTextContent();
+                    if ("k1".equals(id.trim())) {
+
+                        NodeList childNodes = Csapat.getChildNodes();
+
+                        for (int j = 0; j < childNodes.getLength(); j++) {
+                            Node item = childNodes.item(j);
+                            if (item.getNodeType() == Node.ELEMENT_NODE) {
+
+                                if ("Csnev".equalsIgnoreCase(item.getNodeName())) {
+                                    
+                                    item.setTextContent("Kavics");
+                                }
+                            }
+
+                        }
+                        Element Cselerhetoseg = doc.createElement("Cselerhetoseg");
+                        
+                        CDATASection cdataSection =
+                                doc.createCDATASection("Email: kavics@gmail.com");
+
+                        Cselerhetoseg.appendChild(cdataSection);
+
+                        Csapat.appendChild(Cselerhetoseg);
+                    }     
+                }
+            }
+        }
+        
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = factory.newDocumentBuilder();
+        Document doc = builder.newDocument();
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+		Transformer transf = transformerFactory.newTransformer();
+		
+		transf.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+		transf.setOutputProperty(OutputKeys.INDENT, "yes");
+		transf.setOutputProperty("{https://xml.apache.org/xslt}indent-amount", "2");
+		
+        
+        DOMSource source = new DOMSource(doc);
+		
+		File myFile = new File ("users1BKDZXB.xml");
+		
+		StreamResult console = new StreamResult(System.out);
+		StreamResult file = new StreamResult(myFile);
+		
+		transf.transform(source, console);
+		transf.transform(source, file);
+        }
+}

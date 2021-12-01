@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<xs:element name="Kosarcsapat">
+		
+        <xs:complexType>
+			<xs:sequence>
+				<xs:element name="Csapat" type="Csapat_Tipus" minOccurs="0" maxOccurs="1" />
+				<xs:element name="Jatekosok" type="JatekosokTipus" minOccurs="5" maxOccurs="unbounded" />
+				<xs:element name="Merkozes" type="MerkozesTipus" maxOccurs="unbounded" />
+				<xs:element name="Vezetoseg" type="VezetosegTipus" maxOccurs="unbounded" />
+				<xs:element name="Tabella" type="TabellaTipus" maxOccurs="1" />
+				<xs:element name="jatsza" type="JatszaTipus" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		
+		<xs:key name="keyCsapat">
+		 <xs:selector xpath="Csapat"/>
+		 <xs:field xpath="@Cskod"/>
+		</xs:key>
+		
+		<xs:key name="keyJatekosok">
+		 <xs:selector xpath="Jatekosok"/>
+		 <xs:field xpath="@Jkod"/>
+		</xs:key>
+		
+		<xs:key name="keyMerkozes">
+		 <xs:selector xpath="Merkozest"/>
+		 <xs:field xpath="@Mkod"/>
+		</xs:key>
+		
+		<xs:key name="keyVezetoseg">
+		 <xs:selector xpath="Vezetoseg"/>
+		 <xs:field xpath="@Vkod"/>
+		</xs:key>
+		
+		<xs:key name="keyTabella">
+		 <xs:selector xpath="Tabella"/>
+		 <xs:field xpath="@Tkod"/>
+		</xs:key>
+		
+		<xs:keyref name="keyrefJatsza" refer="keyCsapat">
+			<xs:selector xpath="jatsza"/>
+			<xs:field xpath="@Cskod"/>
+		</xs:keyref>
+		<xs:keyref name="keyrefJatsza2" refer="keyMerkozes">
+			<xs:selector xpath="jatsza"/>
+			<xs:field xpath="@Mkod"/>
+		</xs:keyref>
+		
+    </xs:element>
+	
+	<xs:complexType name="Csapat_Tipus">
+		<xs:sequence>
+			<xs:element name="Csvaros" type="xs:string" />
+			<xs:element name="Cselerhetoseg" type="xs:string" maxOccurs="unbounded"/>
+			<xs:element name="Csnev" type="xs:string" />
+		</xs:sequence>
+			<xs:attribute name="Cskod" type="xs:string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="JatekosokTipus">
+		<xs:sequence>
+			<xs:element name="Jnev" type="xs:string" />
+			<xs:element name="Jeletkor" type="xs:integer" />
+			<xs:element name="Jmezszam" type="xs:integer" />
+		</xs:sequence>
+			<xs:attribute name="Jkod" type="xs:string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="VezetosegTipus">
+		<xs:sequence>
+			<xs:element name="Vtagok" type="xs:string" />
+			<xs:element name="Vbeosztas" type="xs:string" />
+		</xs:sequence>
+			<xs:attribute name="Vkod" type="xs:string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="MerkozesTipus">
+		<xs:sequence>
+			<xs:element name="MIdo" type="xs:string" />
+			<xs:element name="Mhelyszin" type="xs:string" />
+		</xs:sequence>
+			<xs:attribute name="Mkod" type="xs:string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="TabellaTipus">
+		<xs:sequence>
+			<xs:element name="Tmeccszam" type="xs:integer" />
+			<xs:element name="Thelyezes" type="xs:integer" />
+			<xs:element name="Tstatisztika" type="TstatisztikaTipus" />
+		</xs:sequence>
+			<xs:attribute name="Tkod" type="xs:string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="TstatisztikaTipus">
+		<xs:sequence>
+			<xs:element name="Gyozelem" type="xs:integer" />
+			<xs:element name="Vereseg" type="xs:integer"/>
+			<xs:element name="Atlag" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="JatszaTipus">
+		<xs:attribute name="Cskod" type="xs:string" use="required"/>
+		<xs:attribute name="Mkod" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+
+</xs:schema>
