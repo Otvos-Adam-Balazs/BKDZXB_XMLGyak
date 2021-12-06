@@ -1,0 +1,47 @@
+<html>
+    <body>
+        <h2></h2>
+        	
+        <p>
+            		ID: <span style="color:#000000">01</span>
+            <br>
+            		Vezeteknev: <span style="color:#2d613b">&Ouml;tv&ouml;s</span>
+            <br>
+            		Keresztnev: <span style="color:#5c4043">&Aacute;d&aacute;m Bal&aacute;zs</span>
+            <br>
+            		Becenev: <span style="color:#4e5482">Bazsi</span>
+            <br>
+            		Kor: <span style="color:#43js31">21</span>
+            <br>
+        </p>
+        	
+	
+        <p>
+            		ID: <span style="color:#000000">02</span>
+            <br>
+            		Vezeteknev: <span style="color:#2d613b">Kek</span>
+            <br>
+            		Keresztnev: <span style="color:#5c4043">Dora</span>
+            <br>
+            		Becenev: <span style="color:#4e5482">Dorka</span>
+            <br>
+            		Kor: <span style="color:#43js31">20</span>
+            <br>
+        </p>
+        	
+	
+        <p>
+            		ID: <span style="color:#000000">03</span>
+            <br>
+            		Vezeteknev: <span style="color:#2d613b">Zsoldos</span>
+            <br>
+            		Keresztnev: <span style="color:#5c4043">Andrea</span>
+            <br>
+            		Becenev: <span style="color:#4e5482">Andi</span>
+            <br>
+            		Kor: <span style="color:#43js31">18</span>
+            <br>
+        </p>
+        
+    </body>
+</html>
