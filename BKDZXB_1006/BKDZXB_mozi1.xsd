@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/BKDZXB_mozi1" xmlns:tns="http://www.example.org/BKDZXB_mozi1" elementFormDefault="qualified">
+	<element name="mozi">
+		<complexType>
+			<sequence>
+				<element name="film" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="rendezo" maxOccurs="unbounded">
+								<complexType>
+									<attribute name="id" type="string" use="required"/>
+									<attribute name="nev" type="string" use="required"/>
+								</complexType>
+							</element>	
+							<element name="szinesz">
+									<complexType>
+									<attribute name="id" type="string" use="required"/>
+									<attribute name="nev" type="string" use="required"/>
+								</complexType>
+							</element>
+							<element name="iro">
+									<complexType>
+									<attribute name="id" type="string" use="required"/>
+								</complexType>
+							</element>
+						</sequence>
+						<attribute name="id" type="string" use="required"/>
+						<attribute name="mufaj" type="string" use="required"/>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+
+</schema>
