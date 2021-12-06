@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BKDZXB_nevjegykartya.xsd">
+
+	<nevjegykartya id="1">
+		<nev>Ötvös Ádám Balázs</nev>
+		<ceg>
+			<nev>Programozzunk kft.</nev>
+			<cim>
+				<iranyitoszam>3360</iranyitoszam>
+				<varos>Heves</varos>
+				<utca>Gyöngyösi utca</utca>
+				<hazszam>53</hazszam>
+			</cim>
+			<telefonszam>0670157896</telefonszam>
+			<weblap>www.programozzunk.hu</weblap>
+		</ceg>
+		<beosztas>Fejlesztő</beosztas>
+		<telefonszam>06701523689</telefonszam>
+		<email>ötvös.ádám.balázs@gmail.com</email>	
+	</nevjegykartya>
+	
+	<nevjegykartya id="2">
+		<nev>Horanek Dávid</nev>
+		<ceg>
+			<nev>Programozzunk kft.</nev>
+			<cim>
+				<iranyitoszam>3360</iranyitoszam>
+				<varos>Heves</varos>
+				<utca>Egri utca</utca>
+				<hazszam>42</hazszam>
+			</cim>
+			<telefonszam>0670157896</telefonszam>
+			<weblap>www.programozzunk.hu</weblap>
+		</ceg>
+		<beosztas>Vezérigazgató</beosztas>
+		<telefonszam>06705689523</telefonszam>
+		<email>Horanek.David@gmail.com</email>
+	</nevjegykartya>
+	
+</nevjegykartyak>
